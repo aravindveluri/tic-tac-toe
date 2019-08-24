@@ -130,7 +130,7 @@ class GameFunctionality
 
   def play_round(player, gameboard)
     puts "It's #{player.name}'s turn!"
-    update_cell(get_valid_cell, player.type, gameboard)
+    update_cell(get_valid_cell(gameboard), player.type, gameboard)
     @moves += 1
   end
 
